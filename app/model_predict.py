@@ -16,7 +16,7 @@ def train_model():
         ssl._create_default_https_context = _create_unverified_https_context
 
     # import data
-    clean_market_data = pd.read_csv('https://raw.githubusercontent.com/jason-christopher/ThoroughZED/dev/app/master_db_no_outliers.csv')
+    clean_market_data = pd.read_csv('https://raw.githubusercontent.com/jason-christopher/ThoroughZED/dev/data/master_data/master_db_no_outliers.csv')
 
     # drop rows where price is NA
     clean_market_data = clean_market_data[~pd.isna(clean_market_data['converted_price'])]
@@ -60,7 +60,7 @@ def predict_horse_price(horse):
         raise ValueError('Please input an integer')
 
     # import data
-    clean_market_data = pd.read_csv('https://raw.githubusercontent.com/jason-christopher/ThoroughZED/dev/app/master_db_no_outliers.csv')
+    clean_market_data = pd.read_csv('https://raw.githubusercontent.com/jason-christopher/ThoroughZED/dev/data/master_data/master_db_no_outliers.csv')
 
     # drop rows where price is NA
     clean_market_data = clean_market_data[~pd.isna(clean_market_data['converted_price'])]

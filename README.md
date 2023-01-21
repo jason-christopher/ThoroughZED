@@ -39,7 +39,7 @@ ZED RUN launched in January 2019 as one of the first Non-Fungible Token (NFT) pr
 3. Activate the virtual environment by running: `source .venv/bin/activate`
 4. Install the requirements needed to run the app by running: `pip install -r requirements.txt`
 5. You must train the machine learning regression model before the first use:
-   * This can be done by running: `python -m model_predict`
+   * This can be done by running: `python -m app.model_predict`
    * It may take up to a minute to run this file, but this only needs to be accomplished once.
    * This will create the `rfr_model.pkl` file that needs to be moved to the `app` folder
    * Now you won't have to train your regression model each time the app is run!
